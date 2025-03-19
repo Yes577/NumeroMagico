@@ -13,6 +13,14 @@ body {
     max-width: 400px;
     margin: 50px auto;
 }
+#restart{
+    display: none;
+}
+.restart-container {
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+}
 h1 {
     font-size: 24px;
     color: #2c3e50;
