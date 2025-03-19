@@ -17,13 +17,13 @@ document.getElementById("submit").addEventListener("click", function() {
     historial.textContent = intentosPrevios.join(", ");
 
     if (inputNumero === numeroSecreto) {
-        mensaje.textContent = '¡Felicidades! Adivinaste el número en ${intentos} intentos.';
+        mensaje.textContent = '¡Felicidades! Adivinaste el número en '+ intentos +' intentos.';
         deshabilitarJuego();
     } else if (intentos >= 10) {
-        mensaje.textContent = 'Se acabaron los intentos. El número era ${numeroSecreto}.' ;
+        mensaje.textContent = 'Se acabaron los intentos. El número era ' + numeroSecreto ;
         deshabilitarJuego();
     } else {
-        mensaje.textContent = inputNumero < numeroSecreto ? "El número es mayor 📈" : "El número es menor 📉";
+        mensaje.textContent = inputNumero < numeroSecreto ? "El número es mayor " : "El número es menor ";
     }
 });
 
